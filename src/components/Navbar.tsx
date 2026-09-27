@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 
 const resumePath =
-  '/Rahul_Reddy_Kesari_Network_Engineer_Resume.pdf'
+  'https://rahulreddy457.github.io/network-engineer-portfolio/Rahul_Reddy_Kesari_Network_Engineer_Resume.pdf'
 
 const navLinks = [
   { name: 'About', href: '#about', id: 'about' },
@@ -29,7 +29,6 @@ export default function Navbar() {
         )
 
       const scrollPosition = window.scrollY + 180
-
       let currentSection = ''
 
       sections.forEach((section) => {
@@ -47,9 +46,8 @@ export default function Navbar() {
       passive: true,
     })
 
-    return () => {
+    return () =>
       window.removeEventListener('scroll', handleScroll)
-    }
   }, [])
 
   useEffect(() => {
@@ -61,9 +59,8 @@ export default function Navbar() {
 
     window.addEventListener('resize', handleResize)
 
-    return () => {
+    return () =>
       window.removeEventListener('resize', handleResize)
-    }
   }, [])
 
   useEffect(() => {
@@ -74,9 +71,7 @@ export default function Navbar() {
     }
   }, [menuOpen])
 
-  const closeMenu = () => {
-    setMenuOpen(false)
-  }
+  const closeMenu = () => setMenuOpen(false)
 
   return (
     <>
@@ -213,6 +208,7 @@ export default function Navbar() {
           </p>
 
           <div className="border-t border-white/10">
+
             {navLinks.map((link, index) => {
               const active = activeSection === link.id
 
@@ -224,6 +220,7 @@ export default function Navbar() {
                   className="group flex items-center justify-between border-b border-white/10 py-5"
                 >
                   <div className="flex items-center gap-5">
+
                     <span
                       className={`font-mono text-[10px] ${
                         active
@@ -243,6 +240,7 @@ export default function Navbar() {
                     >
                       {link.name}
                     </span>
+
                   </div>
 
                   <span
@@ -257,6 +255,7 @@ export default function Navbar() {
                 </a>
               )
             })}
+
           </div>
 
           <a
@@ -266,13 +265,12 @@ export default function Navbar() {
             onClick={closeMenu}
             className="mt-8 inline-flex w-fit items-center gap-3 rounded-full border border-cyan-400/30 bg-cyan-400/[0.05] px-6 py-3 text-sm font-medium text-cyan-400"
           >
-            View Resume
-            <span>↗</span>
+            View Resume <span>↗</span>
           </a>
 
           <div className="mt-12 flex items-center gap-3 font-mono text-[9px] uppercase tracking-[0.2em] text-zinc-700">
             <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-cyan-400" />
-            Network Portfolio
+            Network Engineer Portfolio
           </div>
 
         </div>
