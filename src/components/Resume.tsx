@@ -35,7 +35,7 @@ export default function Resume() {
   const sectionRef = useRef<HTMLElement>(null)
 
   const resumePath =
-    `${import.meta.env.BASE_URL}Rahul_Reddy_Kesari_Network_Engineer_Resume.pdf`
+    'https://rahulreddy457.github.io/network-engineer-portfolio/Rahul_Reddy_Kesari_Network_Engineer_Resume.pdf'
 
   useEffect(() => {
     const ctx = gsap.context(() => {
