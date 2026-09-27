@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>Rahul Reddy Kesari | Network Engineer</title>
+
+    <meta
+      name="description"
+      content="Portfolio of Rahul Reddy Kesari, a CCNA-certified Network Engineer specializing in routing, switching, network security, high availability, troubleshooting, automation, and enterprise network infrastructure."
+    />
+
+    <meta
+      name="keywords"
+      content="Rahul Reddy Kesari, Network Engineer, CCNA, Cisco, Routing, Switching, OSPF, BGP, EIGRP, VLAN, HSRP, IPsec VPN, Network Security, Network Automation, GNS3, Wireshark"
+    />
+
+    <meta name="author" content="Rahul Reddy Kesari" />
+
+    <meta name="theme-color" content="#050505" />
+
+    <meta
+      name="robots"
+      content="index, follow"
+    />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Rahul Reddy Kesari | Network Engineer"
+    />
+
+    <meta
+      property="og:description"
+      content="CCNA-certified Network Engineer focused on routing, switching, network security, high availability, troubleshooting, automation, and enterprise infrastructure."
+    />
+
+    <meta
+      property="og:type"
+      content="website"
+    />
+
+    <meta
+      property="og:site_name"
+      content="Rahul Reddy Kesari — Network Engineer"
+    />
+
+    <!-- Twitter / Social Preview -->
+    <meta
+      name="twitter:card"
+      content="summary"
+    />
+
+    <meta
+      name="twitter:title"
+      content="Rahul Reddy Kesari | Network Engineer"
+    />
+
+    <meta
+      name="twitter:description"
+      content="CCNA-certified Network Engineer focused on enterprise routing, switching, security, troubleshooting, and resilient network infrastructure."
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="%BASE_URL%favicon.svg"
+    />
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script
+      type="module"
+      src="/src/main.tsx"
+    ></script>
+  </body>
+</html>
